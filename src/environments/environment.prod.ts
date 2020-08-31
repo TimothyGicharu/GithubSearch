@@ -1,3 +1,6 @@
+import {secrets} from '../environments/secrets'
+
 export const environment = {
-  production: true
+  production: true,
+  githubToken:secrets.github.accessToken
 };

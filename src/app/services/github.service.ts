@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, throwError, from } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import {User} from '../user';
-import {Repository} from '../repository'
-import {environment} from '../../environments/environment'
+import {Repository} from '../repository';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
