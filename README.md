@@ -1,5 +1,5 @@
 # GithubUsers
-
+This is a Web App that searches for users in Github and repositories.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
 ## Development server
