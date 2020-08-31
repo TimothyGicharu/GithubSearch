@@ -99,7 +99,7 @@
                         <div *ngFor="let repo of repos">
                             <div class="">
                                 <a [attr.href]="repo.html_url">
-                                    <h5 class="text-custom">{{repo.name}}</h5>
+                                    <h5 class="text-custom" appHighlight>{{repo.name}}</h5>
                                 </a>
                                 <p class="mb-0">{{repo.description}}</p>
                                 <p><b>{{repo.language}}</b></p>
