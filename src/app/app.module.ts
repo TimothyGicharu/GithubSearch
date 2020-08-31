@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { HighlightDirective } from './highlight.directive';
+import { ReverseStringPipe } from './reverse-string.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AboutComponent,
-    HighlightDirective
+    HighlightDirective,
+    ReverseStringPipe
   ],
   imports: [
     BrowserModule,
