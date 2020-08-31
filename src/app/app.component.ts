@@ -16,7 +16,6 @@ export class AppComponent {
   repos:Repository[];
 
   constructor(private api: GithubService){
-    console.log('**start**')
     this.title = 'Github Users';
     this.username = 'TimothyGicharu';
     this.fetchUser()
@@ -25,14 +24,12 @@ export class AppComponent {
 
   fetchUser(){
     this.api.getUser(this.username).subscribe((data:User) => {
-      console.log(data)
       this.user = data
     })
   }
 
   fetchRepos(){
     this.api.getRepositories(this.username).subscribe((data:Repository[]) => {
-      console.log(data)
       this.repos = data
     })
   }
